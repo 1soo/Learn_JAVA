@@ -13,7 +13,9 @@ public class questionPractice {
         Map10.put(Coffee_List.AMERICANO, 3000);
         Map10.put(Coffee_List.ICE_AMERICANO, 4000);
         Map10.put(Coffee_List.CAFE_RATTE, 5000);
+
         int Coffee_Price = Map10.get(coffee);
+
         System.out.println("Q10 -> The " + coffee +
                 "'s price is " + Coffee_Price + " Won");
     }
