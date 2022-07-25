@@ -14,7 +14,7 @@ public class Practice_If {
             System.out.println("Call your friend");
         }
         else{
-            System.out.println("Walk to home");
+            System.out.println("Walk to home..");
         }
     }
 }
