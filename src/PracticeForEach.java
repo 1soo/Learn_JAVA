@@ -6,7 +6,7 @@ public class PracticeForEach {
         ArrayList<String> numbers = new ArrayList<>(
                 Arrays.asList("one", "two", "three"));
         for (String number : numbers){
-            System.out.println(number);
+            System.out.println(number + "!");
         }
     }
 }
