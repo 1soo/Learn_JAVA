@@ -1,5 +1,5 @@
 public class GuGu {
-    public static void dan(int n){
+    public void dan(int n){
         for (int i = 1; i < 10; i++){
             System.out.println(n * i);
         }
