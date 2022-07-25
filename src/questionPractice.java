@@ -15,7 +15,7 @@ public class questionPractice {
         Map10.put(Coffee_List.CAFE_RATTE, 5000);
         int Coffee_Price = Map10.get(coffee);
         System.out.println("Q10 -> The " + coffee +
-                "'s price is " + Map10.get(coffee) + " Won");
+                "'s price is " + Coffee_Price + " Won");
     }
     public static void main(String[] args){
         // Q1
