@@ -11,6 +11,6 @@ public class PracticeTypeChangeNFinal {
         final ArrayList<String> li = new ArrayList<>
                 (Arrays.asList("A", "B"));
         System.out.println(li);
-        // List.of가 잘 작동하지 않아 ArrayList로 배열을 선언함.
+        // List.of가 잘 작동하지 않아 ArrayList로 배열을 선언함
     }
 }
