@@ -19,6 +19,11 @@ interface Predator{
         return Leg_Count * 30;
     }
 }
+interface Barkable{
+    void bark();
+}
+interface BarkablePredator extends Predator, Barkable{
+}
 class zooAnimal{
     String name;
 
@@ -26,7 +31,7 @@ class zooAnimal{
         this.name = name;
     }
 }
-class Tiger extends zooAnimal implements Predator{
+class Tiger extends zooAnimal implements BarkablePredator{
     Tiger(String name){
         this.name = name;
     }
@@ -42,8 +47,11 @@ class Tiger extends zooAnimal implements Predator{
     int speed(){
         return Leg_Count * 50;
     }
+    public void bark(){
+        System.out.println("어흥");
+    }
 }
-class Lion extends zooAnimal implements Predator{
+class Lion extends zooAnimal implements BarkablePredator{
     Lion(String name){
         this.name = name;
     }
@@ -59,8 +67,11 @@ class Lion extends zooAnimal implements Predator{
     public void printFood(){
         System.out.println(this.name + " said my food is " + getFood());
     }
+    public void bark(){
+        System.out.println("으르렁");
+    }
 }
-class Crocodile extends zooAnimal implements Predator{
+class Crocodile extends zooAnimal implements BarkablePredator{
     Crocodile(String name){
         this.name = name;
     }
@@ -73,17 +84,27 @@ class Crocodile extends zooAnimal implements Predator{
     public void printFood(){
         System.out.println(this.name + " said my food is " + getFood());
     }
+    public void bark(){
+        System.out.println("쩝쩝");
+    }
 }
 class ZooKeeper{
     String name;
     ZooKeeper(String name){
         this.name = name;
     }
-    void feed(Predator predator){
+    void feed(BarkablePredator predator){
         System.out.println(name + " feed " + predator.getFood()
                 + " in " + predator.getName());
     }
 }
+
+class Bouncer{
+    void barkAnimal(BarkablePredator animal){
+        animal.bark();
+    }
+}
+
 public class PracticeInterface {
     public static void main(String[] args){
         ZooKeeper zookeeper = new ZooKeeper("Julie");
@@ -104,5 +125,11 @@ public class PracticeInterface {
 
         crocodile.printFood();
         zookeeper.feed(crocodile);
+        System.out.println();
+
+        Bouncer bouncer = new Bouncer();
+        bouncer.barkAnimal(tiger);
+        bouncer.barkAnimal(lion);
+        bouncer.barkAnimal(crocodile);
     }
 }
