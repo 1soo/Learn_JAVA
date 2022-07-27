@@ -1,3 +1,5 @@
+package Chapter4;
+
 public class PracticeWhile {
     public static void main(String[] args){
         int coffee_price = 100;

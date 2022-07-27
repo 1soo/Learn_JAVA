@@ -1,3 +1,5 @@
+package Chapter5;
+
 class Animal{
     String name;
 

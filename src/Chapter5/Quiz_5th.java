@@ -1,3 +1,5 @@
+package Chapter5;
+
 import java.util.*;
 
 class Quiz_Calculator{
@@ -161,7 +163,7 @@ public class Quiz_5th {
         Animal7 a7 = new Animal7();
         Animal7 b7 = new Dog7();
         Animal7 c7 = new Lion7();
-        //Dog7 d7 = new Animal7();
+        //Chapter5.Dog7 d7 = new Chapter5.Animal7();
         Predator7 e = new Lion7();
         System.out.println("Q8 -> 4, because subclass can't have superclass constructor");
 
@@ -178,7 +180,7 @@ public class Quiz_5th {
         //System.out.println(c9.hello());
         System.out.println(c9.bark());
         System.out.println("-answer-\n3, 5\n" +
-                "2's datatype is Animal(Animal doesn't have method-bark()\n" +
-                "4's datatype is Predator(Predator doesn't have method-hello()");
+                "2's datatype is Chapter5.Animal(Chapter5.Animal doesn't have method-bark()\n" +
+                "4's datatype is Chapter5.Predator(Chapter5.Predator doesn't have method-hello()");
     }
 }

@@ -1,3 +1,5 @@
+package Chapter4;
+
 public class PracticeFor {
     public static void main(String[] args){
         int[] marks = { 90, 25, 67, 45, 80 };

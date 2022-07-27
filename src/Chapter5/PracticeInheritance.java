@@ -1,3 +1,5 @@
+package Chapter5;
+
 class Animals{
     String name;
 
@@ -5,7 +7,7 @@ class Animals{
         this.name = name;
     }
 }
-class Dog extends Animal{
+class Dog extends Animal {
     void sleep(){
         System.out.println(this.name + "-zzz..");
     }

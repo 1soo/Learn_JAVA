@@ -1,3 +1,5 @@
+package Chapter4;
+
 public class PracticeSwitch {
     public static void main(String[] args){
         int month = (int)(Math.random() * 12) + 1;

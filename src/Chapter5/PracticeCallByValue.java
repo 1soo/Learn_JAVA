@@ -1,3 +1,5 @@
+package Chapter5;
+
 class Updater1{
     void update(int count){
         count++;
@@ -18,12 +20,12 @@ public class PracticeCallByValue {
 
         Updater1 myUpdater1 = new Updater1();
         myUpdater1.update(myCounter.count);
-        System.out.println("after increase by Updater1(Call by Value) : "
+        System.out.println("after increase by Chapter5.Updater1(Call by Value) : "
                             + myCounter.count);
 
         Updater2 myUpdater2 = new Updater2();
         myUpdater2.update(myCounter);
-        System.out.println("after increase by Updater2(Call by reference) : "
+        System.out.println("after increase by Chapter5.Updater2(Call by reference) : "
                 + myCounter.count);
     }
 }

@@ -1,4 +1,4 @@
-// Quiz url : https://wikidocs.net/157658
+package Chapter2;// Quiz url : https://wikidocs.net/157658
 import java.util.*;
 
 public class questionPractice {

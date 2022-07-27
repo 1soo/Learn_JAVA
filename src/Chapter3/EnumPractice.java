@@ -1,3 +1,5 @@
+package Chapter3;
+
 public class EnumPractice {
     enum CoffeeType{
         AMERICANO,

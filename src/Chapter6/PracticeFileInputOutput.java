@@ -1,3 +1,5 @@
+package Chapter6;
+
 import java.io.IOException;
 
 import java.io.FileOutputStream;

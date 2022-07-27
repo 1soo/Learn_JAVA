@@ -1,4 +1,4 @@
-// 콘솔에서 사용자에게 보여주는 것은 콘솔출력, 콘솔에 사용자가 입력하는 것은 콘솔 입력
+package Chapter6;// 콘솔에서 사용자에게 보여주는 것은 콘솔출력, 콘솔에 사용자가 입력하는 것은 콘솔 입력
 // main에서 발생하는 IOException은 나중으로 throw한다.
 import java.io.IOException;
 // 1개 입력받을 때는 int, 여러개는 byte[]로 받는다.
