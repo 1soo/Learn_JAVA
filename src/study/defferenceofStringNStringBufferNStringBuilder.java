@@ -3,6 +3,7 @@ package study;
 String : 멀티쓰레드 환경에서 안전, 연산할 시 메모리 사용 많음, 빠름
 StringBuffer : 멀티 쓰레드환경에서 안전, 연산할 시 메모리 사용 적음, 느림
 StringBuilder : 멀티 쓰레드환경에서 불안전, 연산할 시 메모리 사용 적음, 빠름
+출처 : https://ifuwanna.tistory.com/221
  */
 class return_Str{
     String str;
